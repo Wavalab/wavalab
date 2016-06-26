@@ -5,16 +5,29 @@ html { box-sizing: border-box }
 *:after { box-sizing: inherit }
 
 body {
-  font-family: 'Karla', sans-serif;;
   line-height: 1.8;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  min-height: 100vh;
   background: #572CFE;
   color: white;
-  text-align: left;
 }
 
 ::selection      { background: #3FD; color: #572CFE }
@@ -27,35 +40,29 @@ a {
 }
 
 .logo {
-  background: url(../img/logo.png) no-repeat center center;
-  background-size: contain;
-  height: 13em;
   width: 17em;
-  margin: 0 0 2em;
+  max-width: 100%;
+  margin: 2em 0 3em;
 }
 
 .bio {
   padding: 0 1.5rem;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
-.bio h1 {
+.bio-text {
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
 }
 
 .foot {
-  text-align: right;
-  height: 6em;
-  font-size: 1.15rem;
-  opacity: .3;
+  padding: 3em 0;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: .4;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 70%
-  }
-}
+@media screen and (max-width: 600px) { html { font-size: 73% } }
