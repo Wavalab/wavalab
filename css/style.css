@@ -5,7 +5,7 @@ html { box-sizing: border-box }
 *:after { box-sizing: inherit }
 
 body {
-  font-family: 'Karla', monospace;
+  font-family: 'Karla', sans-serif;;
   line-height: 1.8;
   display: flex;
   align-items: center;
