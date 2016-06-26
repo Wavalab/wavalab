@@ -1,0 +1,61 @@
+html { box-sizing: border-box }
+
+*,
+*:before,
+*:after { box-sizing: inherit }
+
+body {
+  font-family: 'Karla', monospace;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: #572CFE;
+  color: white;
+  text-align: left;
+}
+
+::selection      { background: #3FD; color: #572CFE }
+::-moz-selection { background: #3FD; color: #572CFE }
+
+a {
+  color: #33FEDA;
+  text-decoration: none;
+  box-shadow: 0 .1em 0;
+}
+
+.logo {
+  background: url(../img/logo.png) no-repeat center center;
+  background-size: contain;
+  height: 13em;
+  width: 17em;
+  margin: 0 0 2em;
+}
+
+.bio {
+  padding: 0 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bio h1 {
+  font-weight: normal;
+  font-size: 1.75rem;
+}
+
+.foot {
+  text-align: right;
+  height: 6em;
+  font-size: 1.15rem;
+  opacity: .3;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 70%
+  }
+}
