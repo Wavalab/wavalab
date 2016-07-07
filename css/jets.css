@@ -1,0 +1,150 @@
+html { box-sizing: border-box }
+
+*,
+*:before,
+*:after { box-sizing: inherit }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+::selection      { background: #000; color: #fff }
+::-moz-selection { background: #000; color: #fff }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 1px 0;
+}
+
+.hero,
+.about,
+.calltoaction,
+.foot {
+  position: relative;
+  padding: 12vh 1.5rem 23vh;
+}
+
+.width-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about::before,
+.foot:before {
+  content: "";
+  display: block;
+  height: 10vh;
+  position: absolute;
+  top: -9.9vh;
+  left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 10vh solid #fff;
+	border-left: 100vw solid transparent;
+}
+
+.about::before {
+  border-bottom: 10vh solid #5634fe;
+}
+
+.calltoaction::before {
+  content: "";
+  display: block;
+  height: 10vh;
+  position: absolute;
+  top: -9.9vh;
+  left: 0;
+	width: 0;
+	height: 0;
+	border-right: 100vw solid transparent;
+  border-bottom: 10vh solid #5F59FB;
+}
+
+.hero {
+  background: url(../img/newlogo.png) center center no-repeat;
+  background-size: 57vmin;
+  min-height: 90vh;
+}
+
+.about {
+  background: #5634fe;
+  color: #fff;
+}
+
+.persons {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.person {
+  width: 30%;
+}
+
+.person p {
+  margin-bottom: 3.3rem;
+}
+
+.calltoaction {
+  background: #5F59FB;
+  color: white;
+}
+
+.calltoaction i > span:nth-child(1)  { color: hsl(347, 95%, 67%) }
+.calltoaction i > span:nth-child(2)  { color: hsl(357, 95%, 67%) }
+.calltoaction i > span:nth-child(3)  { color: hsl(10, 95%, 67%)  }
+.calltoaction i > span:nth-child(4)  { color: hsl(20, 95%, 67%)  }
+.calltoaction i > span:nth-child(5)  { color: hsl(30, 95%, 67%)  }
+.calltoaction i > span:nth-child(6)  { color: hsl(40, 95%, 67%)  }
+.calltoaction i > span:nth-child(7)  { color: hsl(50, 95%, 67%)  }
+.calltoaction i > span:nth-child(8)  { color: hsl(60, 95%, 67%)  }
+.calltoaction i > span:nth-child(9)  { color: hsl(70, 95%, 67%)  }
+.calltoaction i > span:nth-child(10) { color: hsl(80, 95%, 67%)  }
+.calltoaction i > span:nth-child(11) { color: hsl(90, 95%, 67%)  }
+.calltoaction i > span:nth-child(12) { color: hsl(100, 95%, 67%) }
+.calltoaction i > span:nth-child(13) { color: hsl(110, 95%, 67%) }
+.calltoaction i > span:nth-child(14) { color: hsl(120, 95%, 67%) }
+.calltoaction i > span:nth-child(15) { color: hsl(130, 95%, 67%) }
+.calltoaction i > span:nth-child(16) { color: hsl(140, 95%, 67%) }
+.calltoaction i > span:nth-child(17) { color: hsl(150, 95%, 67%) }
+.calltoaction i > span:nth-child(18) { color: hsl(160, 95%, 67%) }
+.calltoaction i > span:nth-child(19) { color: hsl(170, 95%, 67%) }
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, .27);
+  color: #fff;
+  padding: 1.2em 2.1em 1.1em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .9em;
+  box-shadow: none;
+  box-shadow: 6px 6px 0 rgba(255, 255, 255, .1);
+}
+
+.foot {
+  font-size: .9em;
+  text-align: center;
+  padding: 4vh 1.5rem 8vh;
+  color: #5634fe;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 85%;
+  }
+  .persons {
+    display: block;
+  }
+  .person {
+    min-width: 100%
+  }
+}

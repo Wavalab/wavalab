@@ -1,46 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang='en-US'>
   <head>
 
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <title>Wavalab</title>
-    <meta name="description" content="A small game studio from California.">
-    <meta name="author" content="John Chin-Jew, Mathew Scolari, Jacob Specht">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#572CFE">
+    <meta name='description' content='An awesome indie game company from California.'>
+    <meta name='author' content='John Chin-Jew, Mathew Scolari, Jacob Specht'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='theme-color' content='#FFF'>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css'>
+    <link rel='stylesheet' href='css/jets.css'>
 
-    <meta property="og:title" content="Wavalab">
-    <meta property="og:site_name" content="Wavalab">
-    <meta property="og:description" content="A small game studio from California.">
-    <meta property="og:url" content="http://wavalab.com">
+    <meta property='og:title' content='Wavalab'>
+    <meta property='og:site_name' content='Wavalab'>
+    <meta property='og:description' content='An awesome indie game company from California.'>
+    <meta property='og:url' content='http://wavalab.com'>
 
-    <base target="_blank">
+    <base target='_blank'>
 
   </head>
   <body>
 
-    <img src="img/logo.png" alt="logo" class="logo">
-    <main class="bio">
-      <h1 class='bio-text'>Wavalab is a small California based game studio made of
-        <a href="http://twitter.com/johnchinjew">John Chin-Jew</a>,
-        <a href="http://twitter.com/mathew_scolari">Mathew Scolari</a>, and
-        <a href="http://twitter.com/psg4mer">Jacob Specht</a>.
-        We make serious fun and not so serious games. Follow
-        <a href="https://twitter.com/wavalab">Wavalab</a> on Twitter to know when we launch our first game: Bricky Bit!
-      </h1>
-      <br><br>
-      <footer class="foot">
-        © <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear())</script> Wavalab.
-      </footer>
-    </main>
+    <header class="hero"></header>
+    <section class="about">
+      <div class="width-wrapper">
+        <h1>Wavalab is an awesome indie game company from California.</h1>
+      </div>
+      <div class="persons">
+        <div class="person">
+          <img src="img/john.png">
+          <h1>The Transmogrifier</h1>
+          <p>
+            John Chin-Jew is the founder, lead developer, and primary todo-list maker of Wavalab. Follow him <a href="http://twitter.com/johnchinjew">@johnchinjew</a>.
+          </p>
+        </div>
+        <div class="person">
+          <img src="img/mathew.png" style="margin-top:62px">
+          <h1>The Floor Mat</h1>
+          <p>
+            Mathew Scolari is an experienced click farm harvester and talented middle out engineer. Follow him <a href="http://twitter.com/mathew_scolari">@mathew_scolari</a>.
+          </p>
+        </div>
+        <div class="person">
+          <img src="img/jacob.png">
+          <h1>The Spechtacular</h1>
+          <p>
+            Jacob Specht really likes Android, but is currently stuck with an iPhone. Follow him <a href="http://twitter.com/PSG4MER">@PSG4MER</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="calltoaction">
+      <div class="width-wrapper">
+        <h1>Join Wavalab on Twitter so you don't miss our first app: <i><span>P</span><span>o</span><span>l</span><span>y</span><span>g</span><span>o</span><span>n</span><span>s</span> <span>E</span><span>v</span><span>e</span><span>r</span><span>y</span><span>w</span><span>h</span><span>e</span><span>r</span><span>e</span><span>!</span></i></h1>
+        <a class="btn" href="http://twitter.com/Wavalab">Follow @Wavalab</a>
+      </div>
+    </section>
+    <footer class="foot">
+        © 2013 - <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear())</script> Wavalab.
+    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-    <script>WebFont.load({google:{families:["Karla:400:latin"]}})</script>
-    <script async src="https://google-analytics.com/analytics.js"></script>
-    <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-79881539-1","auto"),ga("send","pageview")</script>
+    <script src='https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js'></script>
+    <script async src='https://google-analytics.com/analytics.js'></script>
+    <script src='js/jets.js'></script>
+    <script>
+      WebFont.load({google:{families:['Roboto:400,700:latin']}})
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new
+      Date,ga('create','UA-XXXXX-Y','auto'),ga('send','pageview')
+    </script>
 
   </body>
 </html>
