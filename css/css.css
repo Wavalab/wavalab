@@ -1,99 +1,90 @@
 html { box-sizing: border-box }
-
 *,
 *:before,
 *:after { box-sizing: inherit }
-
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5
 }
-
-::selection      { background: #000; color: #fff }
 ::-moz-selection { background: #000; color: #fff }
-
+::selection      { background: #000; color: #fff }
 a {
   color: inherit;
   text-decoration: none;
-  box-shadow: 0 1px 0;
+  box-shadow: 0 1px 0
 }
-
+a:hover { color: #f27 }
 .hero,
 .about,
 .calltoaction,
 .foot {
   position: relative;
-  padding: 12vh 1.5rem 23vh;
+  padding: 12vh 1.5rem 24vh
 }
-
 .width-wrapper {
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
 }
-
 .about::before,
 .foot:before {
   content: "";
   display: block;
   height: 10vh;
   position: absolute;
-  top: -9.9vh;
+  top: -9.8vh;
   left: 0;
 	width: 0;
 	height: 0;
 	border-bottom: 10vh solid #fff;
-	border-left: 100vw solid transparent;
+	border-left: 100vw solid transparent
 }
-
-.about::before {
-  border-bottom: 10vh solid #5634fe;
-}
-
+.about::before { border-bottom: 10vh solid #5634fe }
 .calltoaction::before {
   content: "";
   display: block;
   height: 10vh;
   position: absolute;
-  top: -9.9vh;
+  top: -9.8vh;
   left: 0;
 	width: 0;
 	height: 0;
 	border-right: 100vw solid transparent;
-  border-bottom: 10vh solid #5F59FB;
+  border-bottom: 10vh solid #5F59FB
 }
-
 .hero {
-  background: url(../img/newlogo.png) center center no-repeat;
+  background: url(../img/logo.jpg) center center no-repeat;
   background-size: 57vmin;
-  min-height: 90vh;
+  min-height: 90vh
 }
-
 .about {
   background: #5634fe;
   color: #fff;
 }
-
+.about > div > h1 { margin-bottom: 4.75rem }
 .persons {
   max-width: 1000px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between
 }
-
-.person {
-  width: 30%;
-}
-
-.person p {
-  margin-bottom: 3.3rem;
-}
-
+.person { width: 30% }
+.person p { margin-bottom: 2.25rem }
 .calltoaction {
   background: #5F59FB;
   color: white;
+  padding-bottom: 26vh
 }
-
 .calltoaction i > span:nth-child(1)  { color: hsl(347, 95%, 67%) }
 .calltoaction i > span:nth-child(2)  { color: hsl(357, 95%, 67%) }
 .calltoaction i > span:nth-child(3)  { color: hsl(10, 95%, 67%)  }
@@ -113,7 +104,6 @@ a {
 .calltoaction i > span:nth-child(17) { color: hsl(150, 95%, 67%) }
 .calltoaction i > span:nth-child(18) { color: hsl(160, 95%, 67%) }
 .calltoaction i > span:nth-child(19) { color: hsl(170, 95%, 67%) }
-
 .btn {
   display: inline-block;
   margin-top: 2rem;
@@ -126,25 +116,23 @@ a {
   font-size: .9em;
   box-shadow: none;
   box-shadow: 6px 6px 0 rgba(255, 255, 255, .1);
+  -webkit-transition: color 100ms, background-color 100ms;
+  transition: color 100ms, background-color 100ms
 }
-
+.btn:hover {
+  background-color: #fff;
+  color: #5634fe
+}
 .foot {
   font-size: .9em;
   text-align: center;
   padding: 4vh 1.5rem 8vh;
   color: #5634fe;
   text-transform: uppercase;
-  letter-spacing: .15em;
+  letter-spacing: .15em
 }
-
 @media screen and (max-width: 750px) {
-  html {
-    font-size: 85%;
-  }
-  .persons {
-    display: block;
-  }
-  .person {
-    min-width: 100%
-  }
+  html { font-size: 85% }
+  .persons { display: block }
+  .person { min-width: 100% }
 }
