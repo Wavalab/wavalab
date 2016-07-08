@@ -22,7 +22,7 @@ a:hover { color: #f27 }
   padding: 12vh 1.5rem 24vh
 }
 .width-wrapper {
-  max-width: 620px;
+  max-width: 650px;
   margin: 0 auto;
 }
 .about::before,
@@ -62,7 +62,7 @@ a:hover { color: #f27 }
 }
 .about > div > h1 { margin-bottom: 4.75rem }
 .persons {
-  max-width: 1000px;
+  max-width: 1020px;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
