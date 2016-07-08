@@ -54,7 +54,7 @@ a:hover { color: #f27 }
 .hero {
   background: url(../img/logo.jpg) center center no-repeat;
   background-size: 57vmin;
-  min-height: 83vh
+  min-height: 90vh
 }
 .about {
   background: #5634fe;
