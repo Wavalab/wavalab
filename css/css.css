@@ -9,12 +9,12 @@ body {
 ::-moz-selection { background: #000; color: #fff }
 ::selection      { background: #000; color: #fff }
 a {
-  color: #cf0;
+  color: #DDFF33;
   text-decoration: none;
   box-shadow: 0 2px 0;
   font-weight: bold;
 }
-a:hover { color: #f38 }
+a:hover { color: #FF3377 }
 .hero,
 .about,
 .calltoaction,
@@ -50,7 +50,7 @@ a:hover { color: #f38 }
 	width: 0;
 	height: 0;
 	border-right: 100vw solid transparent;
-  border-bottom: 10vh solid #5F59FB
+  border-bottom: 10vh solid #6543FF
 }
 .hero {
   background: url(../img/logo.jpg) center center no-repeat;
@@ -82,7 +82,7 @@ a:hover { color: #f38 }
 .person { width: 30% }
 .person p { margin-bottom: 2.25rem }
 .calltoaction {
-  background: #5F59FB;
+  background: #6543FF;
   color: white;
   padding-bottom: 26vh
 }
@@ -96,9 +96,9 @@ a:hover { color: #f38 }
   text-transform: uppercase;
   letter-spacing: .15em;
   font-size: .9em;
-  box-shadow: 5px 5px 0 #cf0;
+  box-shadow: 5px 5px 0 #DDFF33;
 }
-.btn:hover { box-shadow: 5px 5px 0 #f38 }
+.btn:hover { box-shadow: 5px 5px 0 #FF3377 }
 .foot {
   font-size: .9em;
   text-align: center;
