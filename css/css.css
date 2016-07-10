@@ -3,17 +3,18 @@ html { box-sizing: border-box }
 *:before,
 *:after { box-sizing: inherit }
 body {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Karla', sans-serif;
   line-height: 1.5
 }
 ::-moz-selection { background: #000; color: #fff }
 ::selection      { background: #000; color: #fff }
 a {
-  color: inherit;
+  color: #cf0;
   text-decoration: none;
-  box-shadow: 0 1px 0
+  box-shadow: 0 2px 0;
+  font-weight: bold;
 }
-a:hover { color: #f27 }
+a:hover { color: #f38 }
 .hero,
 .about,
 .calltoaction,
@@ -85,44 +86,19 @@ a:hover { color: #f27 }
   color: white;
   padding-bottom: 26vh
 }
-.calltoaction i > span:nth-child(1)  { color: hsl(347, 95%, 67%) }
-.calltoaction i > span:nth-child(2)  { color: hsl(357, 95%, 67%) }
-.calltoaction i > span:nth-child(3)  { color: hsl(10, 95%, 67%)  }
-.calltoaction i > span:nth-child(4)  { color: hsl(20, 95%, 67%)  }
-.calltoaction i > span:nth-child(5)  { color: hsl(30, 95%, 67%)  }
-.calltoaction i > span:nth-child(6)  { color: hsl(40, 95%, 67%)  }
-.calltoaction i > span:nth-child(7)  { color: hsl(50, 95%, 67%)  }
-.calltoaction i > span:nth-child(8)  { color: hsl(60, 95%, 67%)  }
-.calltoaction i > span:nth-child(9)  { color: hsl(70, 95%, 67%)  }
-.calltoaction i > span:nth-child(10) { color: hsl(80, 95%, 67%)  }
-.calltoaction i > span:nth-child(11) { color: hsl(90, 95%, 67%)  }
-.calltoaction i > span:nth-child(12) { color: hsl(100, 95%, 67%) }
-.calltoaction i > span:nth-child(13) { color: hsl(110, 95%, 67%) }
-.calltoaction i > span:nth-child(14) { color: hsl(120, 95%, 67%) }
-.calltoaction i > span:nth-child(15) { color: hsl(130, 95%, 67%) }
-.calltoaction i > span:nth-child(16) { color: hsl(140, 95%, 67%) }
-.calltoaction i > span:nth-child(17) { color: hsl(150, 95%, 67%) }
-.calltoaction i > span:nth-child(18) { color: hsl(160, 95%, 67%) }
-.calltoaction i > span:nth-child(19) { color: hsl(170, 95%, 67%) }
 .btn {
   display: inline-block;
   margin-top: 2rem;
-  background: rgba(255, 255, 255, .27);
-  color: #fff;
+  background: #fff;
+  color: #5634fe;
   padding: 1.2em 2.1em 1.1em;
   border-radius: 3px;
   text-transform: uppercase;
   letter-spacing: .15em;
   font-size: .9em;
-  box-shadow: none;
-  box-shadow: 6px 6px 0 rgba(255, 255, 255, .1);
-  -webkit-transition: color 100ms, background-color 100ms;
-  transition: color 100ms, background-color 100ms
+  box-shadow: 5px 5px 0 #cf0;
 }
-.btn:hover {
-  background-color: #fff;
-  color: #5634fe
-}
+.btn:hover { box-shadow: 5px 5px 0 #f38 }
 .foot {
   font-size: .9em;
   text-align: center;
