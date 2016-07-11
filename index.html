@@ -74,7 +74,11 @@
       Date,ga('create','UA-79881539-1','auto'),ga('send','pageview')
       var video = document.getElementById('v');
       addEventListener('load',function(){ video.play()}, false)
-      addEventListener('mousedown',function(){ video.play()}, false)
+      addEventListener('touchstart',function videoStart() {
+        video.play()
+        this.removeEventListener('touchstart', videoStart)
+      }, false)
+      setTimeout(function() { video.play() }, 20)
     </script>
   </body>
 </html>
