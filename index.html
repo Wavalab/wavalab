@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="v">
-      <video src="img/studio.mp4" autoplay loop></video>
+      <video id="v" src="img/studio.mp4" autoplay loop></video>
     </div>
     <header class="hero"></header>
     <section class="about">
@@ -72,6 +72,9 @@
       WebFont.load({google:{families:['Karla:400,700:latin']}})
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new
       Date,ga('create','UA-79881539-1','auto'),ga('send','pageview')
+      var video = document.getElementById('v');
+      addEventListener('load',function(){ video.play()}, false)
+      addEventListener('mousedown',function(){ video.play()}, false)
     </script>
   </body>
 </html>
