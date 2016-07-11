@@ -91,7 +91,7 @@ a:hover { color: #FF3377 }
   margin-top: 2rem;
   background: #fff;
   color: #5634fe;
-  padding: 1.2em 2.22em 1.1em;
+  padding: 1.2em 2.22em 1.05em;
   border-radius: 3px;
   text-transform: uppercase;
   letter-spacing: .15em;
@@ -116,6 +116,8 @@ a:hover { color: #FF3377 }
   html { font-size: 85% }
   .persons { display: block }
   .person { min-width: 100% }
-  .btn { padding: 2.3em 1.4em 2.15em }
+  .btn { padding: 2.3em 1.4em 2.1em }
+}
+@media screen and (max-width: 380px) {
   .btn > span { display: none }
 }
