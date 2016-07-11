@@ -117,3 +117,6 @@ a:hover { color: #FF3377 }
   .persons { display: block }
   .person { min-width: 100% }
 }
+@media screen and (max-width: 380px) {
+  .btn > span { display: none }
+}
