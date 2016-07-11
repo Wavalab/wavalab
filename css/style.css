@@ -50,7 +50,7 @@ a:hover { color: #FF3377 }
 	width: 0;
 	height: 0;
 	border-right: 100vw solid transparent;
-  border-bottom: 10vh solid #6A4AFF
+  border-bottom: 10vh solid #6555ff
 }
 .hero {
   background: url(../img/logo.jpg) center center no-repeat;
@@ -82,7 +82,7 @@ a:hover { color: #FF3377 }
 .person { width: 30% }
 .person p { margin-bottom: 2.25rem }
 .calltoaction {
-  background: #6A4AFF;
+  background: #6555ff;
   color: white;
   padding-bottom: 26vh
 }
