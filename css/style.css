@@ -53,9 +53,33 @@ a:hover { color: #FF3377 }
   border-bottom: 10vh solid #6555ff
 }
 .hero {
-  background: url(../img/logo.jpg) center center no-repeat;
-  background-size: 57vmin;
+  background: url(../img/logo.png) center center no-repeat;
+  background-size: 60vmin;
   min-height: 95vh
+}
+.v video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+.v::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.9);
+  background: -moz-linear-gradient(bottom right, rgba(221,255,51,1) 0%, rgba(255,255,255,.75) 50%, rgba(51, 255, 187,1) 100%);
+  background: -webkit-linear-gradient(bottom right, rgba(221,255,51,1) 0%, rgba(255,255,255,.75) 50%, rgba(51, 255, 187,1) 100%);
+  background: linear-gradient(to top left, rgba(221,255,51,1) 0%, rgba(255,255,255,.75) 50%, rgba(51, 255, 187,1) 100%);
 }
 .about {
   background: #5634fe;
@@ -105,7 +129,8 @@ a:hover { color: #FF3377 }
   padding: 4vh 1.5rem 8vh;
   color: #5634fe;
   text-transform: uppercase;
-  letter-spacing: .15em
+  letter-spacing: .15em;
+  background: #fff
 }
 .foot > a {
   color: inherit;
