@@ -32,7 +32,7 @@ a:hover { color: #FF3377 }
   display: block;
   height: 10vh;
   position: absolute;
-  top: -9.8vh;
+  top: -9.85vh;
   left: 0;
 	width: 0;
 	height: 0;
@@ -45,7 +45,7 @@ a:hover { color: #FF3377 }
   display: block;
   height: 10vh;
   position: absolute;
-  top: -9.8vh;
+  top: -9.85vh;
   left: 0;
 	width: 0;
 	height: 0;
@@ -87,7 +87,7 @@ a:hover { color: #FF3377 }
   padding-bottom: 26vh
 }
 .btn {
-  display: inline-block;
+  display: block;
   margin-top: 2rem;
   background: #fff;
   color: #5634fe;
@@ -107,6 +107,11 @@ a:hover { color: #FF3377 }
   text-transform: uppercase;
   letter-spacing: .15em
 }
+.foot > a {
+  color: inherit;
+  font-weight: normal;
+}
+.foot > a:hover { color: #FF3377 }
 @media screen and (max-width: 750px) {
   html { font-size: 85% }
   .persons { display: block }
