@@ -75,8 +75,8 @@ a:hover { color: #FF3377 }
   top: 0;
   bottom: 0;
   background: rgba(255,255,255,.8);
-  background: -webkit-linear-gradient(bottom right, #e0ffff, rgba(255,255,255,.835) 60%);
-  background: linear-gradient(bottom right, #e0ffff, rgba(255,255,255,.835) 60%);
+  /*background: -webkit-linear-gradient(bottom right, #e0ffff, rgba(255,255,255,.835) 60%);*/
+  /*background: linear-gradient(bottom right, #e0ffff, rgba(255,255,255,.835) 60%);*/
 }
 .about {
   background: #5634fe;
