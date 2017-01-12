@@ -57,25 +57,6 @@ a:hover { color: #FF3377 }
   background-size: 80vw;
   min-height: 95vh
 }
-.v {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.v::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, .85);
-}
 .about {
   background: #5634fe;
   color: #fff;
