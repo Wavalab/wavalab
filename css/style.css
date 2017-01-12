@@ -54,7 +54,7 @@ a:hover { color: #FF3377 }
 }
 .hero {
   background: url(../img/logo.png) center center no-repeat;
-  background-size: 60vmin;
+  background-size: 80vw;
   min-height: 95vh
 }
 .v {
@@ -74,9 +74,7 @@ a:hover { color: #FF3377 }
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255,255,255,.84);
-  /*background: -webkit-linear-gradient(bottom right, #e0ffff, rgba(255,255,255,.835) 60%);*/
-  /*background: linear-gradient(bottom right, #e0ffff, rgba(255,255,255,.835) 60%);*/
+  background: rgba(255, 255, 255, .85);
 }
 .about {
   background: #5634fe;
