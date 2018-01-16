@@ -22,7 +22,6 @@ a:hover { color: #FF3377 }
   background: url('../img/st-bg-banner-desktop.png') center center;
   background-size: cover;
   padding: 6rem 0;
-  letter-spacing: .15em;
 }
 .st-title {
   font-size: 6.8rem;
