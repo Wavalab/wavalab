@@ -15,6 +15,31 @@ a {
   font-weight: bold;
 }
 a:hover { color: #FF3377 }
+.not-a { text-decoration: none; box-shadow: none; font-weight: normal; }
+.st {
+  font-family: 'Fredoka One', sans-serif;
+  text-align: center;
+  background: url('../img/st-bg-banner-desktop.png') center center;
+  background-size: cover;
+  padding: 6rem 0;
+  letter-spacing: .15em;
+}
+.st-title {
+  font-size: 6.8rem;
+  transform: rotate(-3deg);
+  text-shadow: .17rem .17rem .9rem rgba(0,0,0,.15);
+  margin: 0;
+  padding-bottom: 3.75rem;
+}
+.st-google-badge {
+  width: 229px; /* ideal relative is 240px */
+  padding: 0;
+}
+.st-appstore-badge {
+  width: 202.5px;
+  height: 60px;
+  margin: 15px;
+}
 .hero,
 .about,
 .calltoaction,
@@ -61,6 +86,7 @@ a:hover { color: #FF3377 }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  z-index: -1;
 }
 .hero {
   background: url(../img/logo.png) center center no-repeat;
@@ -79,14 +105,14 @@ a:hover { color: #FF3377 }
   animation: wiggle 1s infinite;
 }
 @-webkit-keyframes wiggle {
-  0%   { -webkit-transform: rotate(1.5deg); }
-  50%  { -webkit-transform: rotate(-1.5deg); }
-  100% { -webkit-transform: rotate(1.5deg); }
+  0%   { -webkit-transform: rotate(3deg); }
+  50%  { -webkit-transform: rotate(-3deg); }
+  100% { -webkit-transform: rotate(3deg); }
 }
 @keyframes wiggle {
-  0%   { transform: rotate(1.5deg); }
-  50%  { transform: rotate(-1.5deg); }
-  100% { transform: rotate(1.5deg); }
+  0%   { transform: rotate(3deg); }
+  50%  { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
 }
 .about {
   background: #5634fe;
@@ -149,6 +175,14 @@ a:hover { color: #FF3377 }
   .persons { display: block }
   .person { min-width: 100% }
   .btn { padding: 2.3em 1.4em 2.1em }
+  .st {
+    background-image: url("../img/st-bg-banner-mobile.png");
+    padding: 5rem 0;
+  }
+  .st-title {
+    font-size: 5.25rem;
+    padding-bottom: 2.5rem;
+  }
 }
 @media screen and (max-width: 380px) {
   .btn > span { display: none }
